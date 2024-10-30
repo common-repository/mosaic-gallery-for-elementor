@@ -1,0 +1,22 @@
+.mosaicholder { margin: 15px auto; text-align: center; }
+.mosaicholder a { cursor: pointer; margin: 0 5px; color: #333; }
+.mosaicholder a:hover { color: #222; }
+.mosaicholder a.jp-previous { margin-right: 15px; }
+.mosaicholder a.jp-next { margin-left: 15px; }
+.mosaicholder a.jp-current, a.jp-current:hover {  color: #FF4242; font-weight: bold; }
+.mosaicholder a.jp-disabled, a.jp-disabled:hover { color: #bbb; }
+.mosaicholder a.jp-current, a.jp-current:hover,
+.mosaicholder a.jp-disabled, a.jp-disabled:hover { cursor: default;  background: none; }
+.mosaicholder span { margin: 0 5px; }
+
+ul#mosaicContainer { list-style: none; padding:0; margin: 0 auto; text-align: center; }
+ul#mosaicContainer li { display: inline-block; margin: 5px; padding:0; zoom: 1; max-height: 150px;}
+ul#mosaicContainer li img:hover { opacity:0.50; transition: all 0.3s ease-out 0s;}
+ul#mosaicContainer > li:before{ content: '';}
+
+
+/*Media Queries*/
+@media (max-width: 639px) {
+	ul#mosaicContainer li { float: none; max-height: 100%; text-align: center; width: 100%; }
+	ul#mosaicContainer img { height: 50%; text-align: center; width: 50%; }
+}
